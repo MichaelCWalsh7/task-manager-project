@@ -5,7 +5,6 @@ if os.path.exists("env.py"):
 
 
 app = Flask(__name__)
-err_avoid = env  # DEVNOTE delete this later.
 
 
 @app.route("/")
