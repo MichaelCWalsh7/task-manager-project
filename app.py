@@ -28,4 +28,4 @@ if __name__ == "__main__":
             port=int(os.environ.get("PORT")),
             debug=True)
 
-err_avoid = env
+err_avoid = (env, flash, redirect, request, session, url_for)
