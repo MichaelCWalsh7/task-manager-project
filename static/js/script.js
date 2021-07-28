@@ -4,6 +4,7 @@ $(document).ready(function () {
   });
   $('.collapsible').collapsible();
   $('.tooltipped').tooltip();
+  $('select').formSelect();
   $('.datepicker').datepicker({
     showClearBtn: true,
     yearRange: 3,
