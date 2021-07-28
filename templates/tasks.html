@@ -6,6 +6,8 @@
     <!-- Once Jinja executes a for loop on an object it unpacks it, essentially rendering it useless
     for other for loops. Convert your mongo cursor object into a list [by using the list() method] 
     to iterate through it many times on one page.  -->
+
+    <h3 class="light-blue-text text-darken-4 center-align">All Tasks</h3>
     
     <ul class="collapsible">
          {% for task in tasks %}
@@ -21,6 +23,7 @@
                 <div class="collapsible-body">
                     <strong>{{ task.category_name }}</strong>
                      <p>{{ task.task_description }}</p>
+                     <p><em>by: {{ task.created_by }}</em></p>
                 </div>
             </li>
         {% endfor %}
