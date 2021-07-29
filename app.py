@@ -132,4 +132,4 @@ if __name__ == "__main__":
             port=int(os.environ.get("PORT")),
             debug=True)
 
-err_avoid = (env, ObjectId)
+err_avoid = env
